@@ -1,10 +1,17 @@
+@font-face {
+  font-family: 'Raleway-light';
+  src: url('./fonts/Raleway-VariableFont_wght.woff2')
+  format(woff2);
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #212121;
+  background-color: #000000;
   color: #ffffff;
+  font-family: 'Raleway-light', Arial, sans-serif;;
 }
 
 .flex-container {
@@ -15,4 +22,5 @@ body {
   flex-direction: column;
   align-items: center;
   max-width: 1440px;
+  height: 200vh; /* take out when finished*/
 }
