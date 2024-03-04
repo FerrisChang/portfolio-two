@@ -1,0 +1,10 @@
+.Nav-bar {
+  position: sticky;
+  justify-content: center;
+  max-width: 360px;
+}
+
+.Nav-btn {
+  height: 30px;
+  width: 50px;
+}
