@@ -2,19 +2,19 @@
   position: fixed;
   top: 0;
   justify-content: center;
-  max-width: 360px;
+  max-width: 22.5rem;
   border-radius: 30px;
-  margin: 15px;
+  margin: 0.938rem;
+  padding: 0.313rem;
 }
 
 .Nav-btn {
-  height: 40px;
-  width: 100px;
+  height: 2.5rem;
+  width: 6.25rem;
   border-radius: 30px;
   justify-content: center;
   align-items: center;
-  margin: 5px;
-  padding: 5px;
+  padding: 0.125rem 0.375rem;
 }
 .Nav-btn:hover { 
   background-color: #a1a1a1e7;

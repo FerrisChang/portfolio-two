@@ -2,11 +2,11 @@
   height: 100vh;
   width: 100vw;
   justify-content: center;
-  background: rgb(70,29,108);
-  background: -moz-radial-gradient(center top, circle, rgba(70,29,108,1) 0%, rgba(0,0,0,1) 20%);
-  background: -webkit-radial-gradient(center top, circle, rgba(70,29,108,1) 0%, rgba(0,0,0,1) 20%);
-  background: radial-gradient(circle at circle, rgba(70,29,108,1) 0%, rgba(0,0,0,1) 20%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#461d6c",endColorstr="#000000",GradientType=1);
+  background: rgb(29,89,108);
+  background: -moz-radial-gradient(center top, circle, rgba(29,89,108,1) 0%, rgba(0,0,0,1) 20%);
+  background: -webkit-radial-gradient(center top, circle, rgba(29,89,108,1) 0%, rgba(0,0,0,1) 20%);
+  background: radial-gradient(circle at circle, rgba(29,89,108,1) 0%, rgba(0,0,0,1) 20%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d596c",endColorstr="#000000",GradientType=1);
 }
 
 #home-info-container {
@@ -17,8 +17,13 @@
 
 #home-support-align {
   text-align: center;
+  line-height: 1.8rem;
 }
 
 .home-spacing {
   margin: 0.3rem;
+}
+
+.special-font-color {
+  color: #93e9be;
 }
