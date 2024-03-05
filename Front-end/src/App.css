@@ -9,6 +9,7 @@ body {
   background-color: #000000;
   color: #ffffff;
   font-family: 'Raleway-regular', sans-serif;
+  letter-spacing: .17rem;
 }
 /* mainly used for custom fonts */
 .raleway-itl {
