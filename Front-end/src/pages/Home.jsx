@@ -1,5 +1,7 @@
 import React from 'react'
 import './Home.css'
+import AboutMe from '../components/Sections/AboutMe'
+import SkillWork from '../components/Sections/SkillWork'
 
 const Home = () => {
   return (
@@ -10,7 +12,8 @@ const Home = () => {
         <p id='home-support-align' className='raleway-itl home-spacing'>Let my passion for building beautiful and innovative applications 
           <br/>help drive your business success</p>
       </div>
-
+      <AboutMe />
+      <SkillWork />
     </div>
   )
 }

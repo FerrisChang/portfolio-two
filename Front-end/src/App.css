@@ -23,16 +23,12 @@ body {
   font-size: 2.188rem;
 }
 .subheading-font {
-  font-size: 1.875rem;
+  font-size: 1.6rem;
 }
-
-
 
 .flex-container {
   display: flex;
 }
-
-
 .App-container {
   flex-direction: column;
   align-items: center;
