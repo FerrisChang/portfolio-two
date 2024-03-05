@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Raleway-regular';
+  src: local('Raleway-regular'),
+    url('./Raleway-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Raleway-italic';
+  src: local('Raleway-italic'), 
+    url('Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Raleway-bold';
+  src: local('Raleway-bold'),
+    url('./static/Raleway-Bold.ttf') format('truetype');
+}

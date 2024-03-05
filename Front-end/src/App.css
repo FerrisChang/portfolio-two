@@ -1,8 +1,5 @@
-@font-face {
-  font-family: 'Raleway-light';
-  src: url('./fonts/Raleway-VariableFont_wght.woff2')
-  format(woff2);
-}
+@import url('./fonts/fonts.css');
+
 
 html {
   scroll-behavior: smooth;
@@ -11,12 +8,29 @@ html {
 body {
   background-color: #000000;
   color: #ffffff;
-  font-family: 'Raleway-light', Arial, sans-serif;;
+  font-family: 'Raleway-regular', sans-serif;
 }
+/* mainly used for custom fonts */
+.raleway-itl {
+  font-family: 'Raleway-italic';
+}
+.raleway-bold {
+  font-family: 'Raleway-bold';
+}
+/* centralized font size that can be inherited */
+.headings-size {
+  font-size: 2.188rem;
+}
+.subheading-font {
+  font-size: 1.875rem;
+}
+
+
 
 .flex-container {
   display: flex;
 }
+
 
 .App-container {
   flex-direction: column;

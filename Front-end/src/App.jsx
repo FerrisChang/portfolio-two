@@ -1,7 +1,7 @@
 import './App.css'
 import Nav from './components/Nav/Nav'
-function App() {
 
+function App() {
   return (
     <div className='App-container flex-container'>
       <Nav />
