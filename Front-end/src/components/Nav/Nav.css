@@ -6,6 +6,7 @@
   border-radius: 30px;
   margin: 0.938rem;
   padding: 0.313rem;
+  z-index: 999;
 }
 
 .Nav-btn {

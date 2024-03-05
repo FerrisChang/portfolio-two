@@ -1,0 +1,15 @@
+#SkillWork-Section {
+  flex-direction: column;
+  width: 100vw;
+  max-width: 1440px;
+  margin: 0rem 0rem 4rem 0rem;
+}
+
+#special-skill {
+  padding: 0.5rem 0rem;
+  border-bottom: 1px;
+  border-color: white;
+  border-style: solid;
+  margin-bottom: 1rem;
+  max-width: 18rem;
+}
