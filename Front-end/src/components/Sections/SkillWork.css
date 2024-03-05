@@ -5,11 +5,44 @@
   margin: 0rem 0rem 4rem 0rem;
 }
 
-#special-skill {
+#special-title-format {
   padding: 0.5rem 0rem;
   border-bottom: 1px;
   border-color: white;
   border-style: solid;
   margin-bottom: 1rem;
-  max-width: 18rem;
+  max-width: 5rem;
+}
+
+#skill-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+#skills {
+  padding: .75rem 1.5rem;
+  margin: .75rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 99px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #212121da;
+}
+#skills:hover {
+  cursor: default;
+  transition: 1s ease;
+  background-color:  #93e9be;
+  border-color: white;
+}
+
+#special-work-format {
+  padding: 0.5rem 0rem;
+  border-bottom: 1px;
+  border-color: white;
+  border-style: solid;
+  margin-bottom: 1rem;
+  max-width: 10rem;
 }
