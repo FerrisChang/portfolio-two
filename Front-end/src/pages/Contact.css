@@ -1,0 +1,110 @@
+#Contact {
+  width: 100vw;
+  max-width: 1440px;
+  margin: 7rem 0rem 4rem 0rem;
+}
+#special-title {
+  padding: 0.5rem 0rem;
+  border-bottom: 1px;
+  border-color: white;
+  border-style: solid;
+  margin-bottom: 1rem;
+  max-width: 7.2rem;
+}
+
+
+#form {
+  background-color: #212121;
+  padding: 15px;
+  border-radius: 3px;
+  flex-direction: row;
+}
+
+#closer {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70vw;
+}
+
+#inner-text {
+  line-height: 1.49rem;
+  margin:  0 1rem 1rem 0;
+}
+
+.inner-form {
+  --border-height: 1px;
+  --border-before-color: rgba(221, 221, 221, 0.39);
+  --border-after-color: #93e9be;
+  --input-hovered-color: #4985e01f;
+  position: relative;
+  width: 30vw;
+}
+ /* styling of Input */
+.inputOne, .inputTwo {
+  color: #fff;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+  border-bottom: var(--border-height) solid var(--border-before-color);
+}
+
+.inputThree {
+  margin-top: 1rem;
+  color: #fff;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: var(--border-height) solid var(--border-before-color);
+}
+ /* styling of animated border */
+.input-border {
+  position: absolute;
+  background: var(--border-after-color);
+  width: 0%;
+  height: 2px;
+  left: 0;
+  transition: 0.3s;
+}
+
+.positionOne {
+  top: 33px;
+}
+
+.positionTwo {
+  top: 68px;
+}
+
+.positionThree {
+  top: 35px;
+}
+
+ /* Hover on Input */
+input:hover {
+  background: var(--input-hovered-color);
+}
+
+input:focus {
+  outline: none;
+}
+ /* here is code of animated border */
+.inputOne:focus ~ .positionOne {
+  width: 100%;
+}
+
+.inputTwo:focus ~ .positionTwo {
+  width: 100%;
+}
+
+.social {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.social-btn-container {
+  align-items: center;
+}

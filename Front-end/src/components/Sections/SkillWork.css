@@ -43,7 +43,7 @@
   border-color: white;
   border-style: solid;
   margin-bottom: 1rem;
-  max-width: 10rem;
+  max-width: 10.2rem;
 }
 #color {
   color:#93e9be;
@@ -67,7 +67,8 @@
 }
 
 #disc {
-  margin-bottom: 0.75rem
+  margin-bottom: 0.75rem;
+  line-height: 1.49rem;
 }
 
 #useFullSkills {
