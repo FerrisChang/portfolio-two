@@ -23,12 +23,24 @@ const Projects = () => {
   return (
     <div id='Projects'>
       <h2 id='special-project-format' className='subheading-font'>Projects</h2>
-      <div id='project-container'>
+      <div id='project-container' className='flex-container'>
         {projects.map((item, index) => (
-          <div key={index}>
-            <img src={item.img} alt="project image" />
-            
-          </div>
+          <a href={item.url} key={index} id='cards'>
+            <div id='big-container' className='flex-container'>
+              <img id='pro-img' src={item.img} alt="project image" /> 
+              <div id='inner-con' className='flex-container'>
+                <div id='pro-name' className='raleway-bold'>{item.name}</div>
+                <p id='pro-desc'>{item.desc}</p>
+                <div id='pro-con'>
+                  {
+                    item.tools.map((tool, ind) => (
+                      <span id='tool-name' key={ind}>{tool}</span>
+                    ))
+                  }
+                </div>
+              </div>
+            </div>
+          </a>
         ))}
       </div>
     </div>
