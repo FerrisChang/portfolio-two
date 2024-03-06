@@ -1,6 +1,5 @@
 #SkillWork-Section {
   flex-direction: column;
-  width: 100vw;
   max-width: 1440px;
   margin: 0rem 0rem 4rem 0rem;
 }
@@ -45,4 +44,38 @@
   border-style: solid;
   margin-bottom: 1rem;
   max-width: 10rem;
+}
+#color {
+  color:#93e9be;
+}
+
+#experience-container {
+  flex-direction: column;
+}
+
+#experience { 
+  margin-bottom: 3rem;
+}
+
+#years {
+  margin-right: 6rem;
+  width: 0rem;
+}
+
+#titleAndCompany {
+  margin-bottom: 1rem;
+}
+
+#disc {
+  margin-bottom: 0.75rem
+}
+
+#useFullSkills {
+  padding: 0.5rem .9rem;
+  margin-right: 0.3rem;
+  background-color: #93e9be;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 3px;
+  border-style: solid;
 }

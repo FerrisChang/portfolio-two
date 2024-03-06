@@ -31,21 +31,22 @@ const SkillWork = () => {
       <div id='experience-container' className='flex-container'>
         {work.map((item, index) => (
           <div id='experience' className='flex-container' key={index}>
-            <div>{item.year}</div>
+            <div id='years'>{item.year}</div>
             <div>
-              <div>
-                <div>
+              <div id='titleAndCompany' className='flex-container'>
+                <div id='title'>
                   {item.title}
                 </div>
-                <div>
+                <span id='color'>&nbsp;|&nbsp;</span>
+                <div id='company'>
                   {item.company}
                 </div>
               </div>
               <div>
-                <div>{item.desc}</div>
-                <div>
+                <div id='disc'>{item.desc}</div>
+                <div className='flex-container'>
                   {item.skills.map((element, idx) => (
-                  <p key={idx}>{element}</p>
+                  <p id='useFullSkills' key={idx}>{element}</p>
                   ))}
                 </div>
               </div>

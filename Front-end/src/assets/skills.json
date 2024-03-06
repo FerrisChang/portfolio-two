@@ -18,13 +18,12 @@
     "Jest",
     "Webpack",
     "npm",
-    "Visual Studio Code",
     "JShell",
     "JSON"
   ],
   "work": [
     {
-      "year": "2023 - Current",
+      "year": "Current - 2023",
       "title": "FRONTEND ENGINEER",
       "company": "RAFIQ CODES LLC.",
       "desc": "As a Front-End Engineer at Rafiq Codes LLC., I spearheaded the implementation of customer-facing digital assets using React, resulting in a seamless interactive experience for clients and an impressive 15% increase in customer conversion rates during face-to-face interactions. Collaborating closely with UI/UX Designers on Figma, I ensured the translation of visual design into responsive and user-friendly interfaces, leveraging SASS for enhanced scalability. Through the development and maintenance of websites, incorporating HTML, CSS, and JavaScript frameworks, I optimized the user experience, leading to improved search engine optimization (SEO). Additionally, my collaboration with backend developers facilitated the integration of the frontend with Express servers, implementing CRUD operations in internal tools and generating an estimated $50,000 in cost savings for the company.",
@@ -37,7 +36,7 @@
       ]
     },
     {
-      "year": "2022 - 2023",
+      "year": "2023 - 2022",
       "title": "JUNIOR FRONT-END ENGINEER CONTRACT",
       "company": "RAFIQ CODES LLC.",
       "desc": "During my tenure as a Junior Front-End Engineer on contract at Rafiq Codes LLC., I played a pivotal role in collaborating with company designers to craft reusable client-facing web components, streamlining development processes and saving over 90 man hours. Working alongside senior engineers, I facilitated the integration of various APIs into client websites, enabling secure online payments through the Stripe payment API and yielding a significant 15% improvement in sales conversions. Additionally, my dedication to staying abreast of emerging frameworks and technologies ensured that our projects remained optimized and aligned with industry standards, contributing to a more efficient and forward-thinking development environment.",
@@ -50,7 +49,7 @@
       ]
     },
     {
-      "year": "2022 - 2023",
+      "year": "2023 - 2022",
       "title": "DATA CENTER OPERATIONS TECHNICIAN",
       "company": "AMAZON (AWS)",
       "desc": "During my tenure as a Data Center Operations Technician at Amazon (AWS), I maintaining and installing critical physical network infrastructure, including servers and computer systems. This meticulous attention to detail ensured minimal resource downtime, enhancing the overall customer experience and instilling peace of mind. I also prioritized client data security by adhering to best practices when transferring data to more robust server network infrastructure, safeguarding sensitive information. Additionally, I took the lead in training new operations technicians on best practices for handling server and data transfers, resulting in a remarkable 15% reduction in user errors and enabling us to swiftly bring customer servers back online when needed.",
@@ -63,7 +62,7 @@
       ]
     },
     {
-      "year": "2021 - 2022",
+      "year": "2022 - 2021",
       "title": "IT TECHNICIAN INTERN",
       "company": "GERMANNA COMMUNITY COLLEGE",
       "desc": "As an IT Technician Intern at Germanna Community College, I took on the responsibility of maintaining campus digital assets across three different buildings, ensuring the smooth operation of all computer and audiovisual equipment. Collaborating with six different IT departments across external campus sites, I played a key role in installing and maintaining audiovisual meeting systems, facilitating seamless cross-campus meetings and enabling leadership to conduct important decision-making sessions remotely during the Covid-19 lockdown. Additionally, I spearheaded the installation of new campus servers, significantly improving the speed and security of user information and personal data transfers. This initiative not only enhanced student access to essential resources such as payment methods and class scheduling but also contributed to a more efficient and streamlined campus IT infrastructure.",
@@ -76,7 +75,7 @@
       ]
     },
     {
-      "year": "2013 - 2017",
+      "year": "2017 - 2013",
       "title": "FIRE CONTROLMAN",
       "company": "UNITED STATES NAVY",
       "desc": "While in the United States Navy, I demonstrated proficiency in maintaining and repairing the Aegis radar system using advanced techniques such as 3M board and solder techniques. Through my dedication and expertise, I successfully saved over $1.3M in parts replacement costs by conducting repairs on high-power components, logic boards, and high-voltage power supplies. Furthermore, I played a pivotal role in training new team technicians, providing them with 30 hours of technical instruction on radar computer systems, associated technologies, and safety standards. Additionally, I ensured compliance with federal, Department of Defense (DoD), and Department of the Navy (DON) Information Assurance (IA) requirements, underscoring my commitment to maintaining the highest standards of security and integrity in all operations.",
