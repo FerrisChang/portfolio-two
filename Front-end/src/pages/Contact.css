@@ -108,3 +108,34 @@ input:focus {
 .social-btn-container {
   align-items: center;
 }
+
+.button-send {
+  cursor: pointer;
+  font-weight: 700;
+  transition: all .2s;
+  padding: 5px 10px;
+  border-radius: 100px;
+  background: white;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.button-send:hover {
+  background: white;
+}
+
+.arrow {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform .3s ease-in-out;
+}
+
+.button-send:hover svg {
+  transform: translateX(5px);
+}
+
+.button-send:active {
+  transform: scale(0.95);
+}

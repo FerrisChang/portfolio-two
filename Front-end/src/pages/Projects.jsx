@@ -9,12 +9,10 @@ const Projects = () => {
     getProjects()
   }, [])
 
-  console.log(projects)
   const getProjects = async() => {
     try {
       const pro = await axios.get('http://localhost:3000/project')
       setProjects(pro.data)
-      console.log('Successfully fetched projects')
     } catch (err) {
       console.error('Client side error fetching project data', err.message)
     }
