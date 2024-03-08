@@ -61,6 +61,11 @@ const oauth2Client = new google.auth.OAuth2(
   process.env.REDIRECT_URI
 );
 
+// If refresh token is available, set it in OAuth2 client
+if (process.env.REFRESH_TOKEN) {
+  oauth2Client.setCredentials({refresh_token: process.env.REFRESH_TOKEN})
+}
+
 // Generate URL for OAuth 2.0 authorization
 const authUrl = oauth2Client.generateAuthUrl({
   access_type: 'offline',
@@ -69,17 +74,19 @@ const authUrl = oauth2Client.generateAuthUrl({
 
 // Redirect user to auth URL to authorize the app
 app.get('/authorize', (req, res) => {
-  res.redirect(authUrl);
+  res.redirect(authUrl)
 });
 
 // OAuth 2.0 callback URL to exchange authorization code for tokens
 app.get('/callback', async (req, res) => {
   const { code } = req.query;
   console.log('from google:', code)
-  const { tokens } = await oauth2Client.getToken(code);
+  const { tokens } = await oauth2Client.getToken(code)
   console.log(tokens)
-  oauth2Client.setCredentials(tokens);
-  res.send('Authorization successful. You can now send emails.');
+
+  process.env.REFRESH_TOKEN = tokens.refresh_token
+  oauth2Client.setCredentials(tokens)
+  res.send('Authorization successful. You can now send emails.')
 });
 
 // Route to handle form submission and send email
@@ -101,8 +108,16 @@ app.post('/send-email', async (req, res) => {
       from: 'ferris.portfolio.backend@gmail.com',
       to: 'ferris.chang.f@gmail.com',
       subject: subject,
-      text: message,
+      text: message + '\n' + email,
     });
+
+    await transporter.sendMail({
+      from: 'ferris.portfolio.backend@gmail.com',
+      to: email,
+      subject: 'Re: Ferris Portfolio',
+      text: "Thank you for visiting my portfolio!\nI look forward to speaking with you in the future."
+    })
+
     res.status(200).send('Email sent successfully.');
   } catch (error) {
     console.error('Error sending email:', error);

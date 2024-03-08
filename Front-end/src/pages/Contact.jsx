@@ -33,6 +33,11 @@ const Contact = () => {
     } catch (err) {
       console.error('Error sending message:', err.message)
     }
+    setFormData({
+      email: '', 
+      subject: '',
+      message: ''
+    })
   }
 
 
