@@ -51,9 +51,13 @@ app.get('/project', async(req, res) => {
   }
 })
 
-// will push form data email 
+// This section will go through the Google OAuth2.0 process sending the appropriate credentials and requesting a Access_token and Refresh_token
+// The Refresh_token will be stored in env file and will look to see if one is already available if so it will use the Refresh_token to request a new Access_token
+// After verification the nodemailer will collect all information for sending out the email and will send a new request to the scoped google api
+// If the credentials and scope match permission is granted and the email will be sent
 const { google } = require('googleapis')
 const nodemailer = require('nodemailer')
+const fs = require('fs')
 
 const oauth2Client = new google.auth.OAuth2(
   process.env.CLIENT_ID,
@@ -104,6 +108,10 @@ app.post('/send-email', async (req, res) => {
         accessToken: oauth2Client.credentials.access_token,
       },
     });
+
+    // Read the HTML file
+    const htmlEmail = fs.readFileSync('response.html', 'utf8')
+
     await transporter.sendMail({
       from: 'ferris.portfolio.backend@gmail.com',
       to: 'ferris.chang.f@gmail.com',
@@ -115,7 +123,7 @@ app.post('/send-email', async (req, res) => {
       from: 'ferris.portfolio.backend@gmail.com',
       to: email,
       subject: 'Re: Ferris Portfolio',
-      text: "Thank you for visiting my portfolio!\nI look forward to speaking with you in the future."
+      text: htmlEmail
     })
 
     res.status(200).send('Email sent successfully.');

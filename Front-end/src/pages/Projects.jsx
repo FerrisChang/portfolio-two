@@ -29,7 +29,7 @@ const Projects = () => {
               <div id='inner-con' className='flex-container'>
                 <div id='pro-name' className='raleway-bold'>{item.name}</div>
                 <p id='pro-desc'>{item.desc}</p>
-                <div id='pro-con'>
+                <div id='pro-con' className='flex-container'>
                   {
                     item.tools.map((tool, ind) => (
                       <span id='tool-name' key={ind}>{tool}</span>

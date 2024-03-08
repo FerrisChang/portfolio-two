@@ -44,7 +44,7 @@ const SkillWork = () => {
               </div>
               <div>
                 <div id='disc'>{item.desc}</div>
-                <div className='flex-container'>
+                <div id='skill-inner-container' className='flex-container'>
                   {item.skills.map((element, idx) => (
                   <p id='useFullSkills' key={idx}>{element}</p>
                   ))}

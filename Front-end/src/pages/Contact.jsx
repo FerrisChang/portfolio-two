@@ -27,6 +27,9 @@ const Contact = () => {
 
   const sendEmail = async(e) => {
     e.preventDefault()
+    if(formData.email == '' || formData.subject == '' || formData.message == ''){
+      return
+    }
     try {
       const data = await axios.post('http://localhost:3000/send-email', formData)
       console.log('message successfully sent:', data)
