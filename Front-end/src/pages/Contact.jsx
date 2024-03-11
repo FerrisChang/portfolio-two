@@ -18,7 +18,7 @@ const Contact = () => {
 
   const authorize = async() => {
     try {
-      const auth = await axios.get('http://localhost:3000/authorize')
+      const auth = await axios.get('http://52.15.118.168:3000/authorize')
       console.log('successfully authorized application', auth)
     } catch (err) {
       console.error('Error authorizing application:', err)
@@ -31,7 +31,7 @@ const Contact = () => {
       return
     }
     try {
-      const data = await axios.post('http://localhost:3000/send-email', formData)
+      const data = await axios.post('http://52.15.118.168:3000/send-email', formData)
       console.log('message successfully sent:', data)
     } catch (err) {
       console.error('Error sending message:', err.message)

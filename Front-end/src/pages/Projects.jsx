@@ -11,7 +11,7 @@ const Projects = () => {
 
   const getProjects = async() => {
     try {
-      const pro = await axios.get('http://localhost:3000/project')
+      const pro = await axios.get('http://52.15.118.168:3000/project')
       setProjects(pro.data)
     } catch (err) {
       console.error('Client side error fetching project data', err.message)
