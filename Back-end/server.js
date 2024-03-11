@@ -9,11 +9,11 @@ app.use(express.json())
 app.use(bodyParser.json())
 //Enabled CORS for specific routes and options
 app.use((req, res, next) => {
-  const allowedOrigins = ['http://localhost:5173']; // Add other origins as needed for full deployment later on
-  const requestOrigin = req.headers.origin;
-  if (allowedOrigins.includes(requestOrigin)) {
-    res.setHeader('Access-Control-Allow-Origin', requestOrigin);
-  }
+  // const allowedOrigins = ['http://localhost:5173']; // Add other origins as needed for full deployment later on
+  // const requestOrigin = req.headers.origin;
+  // if (allowedOrigins.includes(requestOrigin)) {
+  //   res.setHeader('Access-Control-Allow-Origin', requestOrigin);
+  // }
   res.setHeader('Access-Control-Allow-Origin', '*')
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
